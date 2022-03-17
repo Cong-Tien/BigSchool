@@ -109,3 +109,4 @@ C:\Users\My PC\Desktop\lsb-03\lsb-03\obj\Debug\lsb-03.pdb
 C:\Users\My PC\Desktop\lsb-03\lsb-03\obj\Debug\lsb_03.Migrations.InitialModel.resources
 C:\Users\My PC\Desktop\lsb-03\lsb-03\obj\Debug\lsb-03.csproj.GenerateResource.cache
 C:\Users\My PC\Desktop\lsb-03\lsb-03\obj\Debug\lsb_03.Migrations.CreateTableCourse.resources
+C:\Users\My PC\Desktop\lsb-03\lsb-03\obj\Debug\lsb_03.Migrations.PopulateCategoryTable.resources
