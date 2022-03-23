@@ -9,11 +9,13 @@ namespace lsb_03.ViewModels
 {
     public class CourseViewModel
     {
-        [Required(ErrorMessage = "Khoong dduwowcj trong")]
+        [Required(ErrorMessage = "Place isn't empty")]
         public string Place { get; set; }
         [Required]
+        [FutureDate]
         public string Date { get; set; }
         [Required]
+        [ValidTime]
         public string Time { get; set; }
         [Required]
         public byte Category { get; set; }

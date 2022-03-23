@@ -25,6 +25,7 @@ namespace lsb_03.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if(!ModelState.IsValid)

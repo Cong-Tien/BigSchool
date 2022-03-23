@@ -7,6 +7,7 @@
 <h2 style="color:pink">Create</h2>
 @using (Html.BeginForm("Create", "Courses"))
 {
+    @Html.AntiForgeryToken()
     <div class="form-group">
         @Html.LabelFor(m => m.Place)
         @Html.TextBoxFor(m => m.Place, new { @class = "form-control" })
@@ -41,5 +42,9 @@
             @Html.LabelFor(m => m.Category.Id)
         </div>*@
 }
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval");
+    }
 
 

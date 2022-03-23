@@ -12,6 +12,18 @@
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+.navbar-inverse {
+    background-color: pink !important;
+    border-color: lightblue;
+}
+.navbar-inverse .navbar-nav >li>a {
+    color: white; 
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+
 .dl-horizontal dt {
     white-space: normal;
 }
