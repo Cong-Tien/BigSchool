@@ -96,4 +96,4 @@ C:\Users\My PC\Desktop\lsb-03\lsb-03\bin\System.Web.Http.WebHost.dll
 C:\Users\My PC\Desktop\lsb-03\lsb-03\bin\System.Net.Http.Formatting.xml
 C:\Users\My PC\Desktop\lsb-03\lsb-03\bin\System.Web.Http.xml
 C:\Users\My PC\Desktop\lsb-03\lsb-03\bin\System.Web.Http.WebHost.xml
-C:\Users\My PC\Desktop\lsb-03\lsb-03\obj\Debug\lsb-03.csproj.AssemblyReference.cache
+C:\Users\My PC\Desktop\lsb-03\lsb-03\obj\Debug\lsb_03.Migrations.AddFollwingTable.resources

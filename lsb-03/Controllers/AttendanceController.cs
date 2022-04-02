@@ -1,4 +1,5 @@
-﻿using lsb_03.Models;
+﻿using lsb_03.DTOs;
+using lsb_03.Models;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
@@ -18,12 +19,15 @@ namespace lsb_03.Controllers
             _dbContext = new ApplicationDbContext();
         }
         [HttpPost]
-        public IHttpActionResult Attend([FromBody] int courseId)
+        public IHttpActionResult Attend(AttendanceDto attendanceDto)
         {
+            var userId = User.Identity.GetUserId();
+            if (_dbContext.Attendances.Any(a => a.AttendeeId == userId && a.CourseID == attendanceDto.CourseId))
+                return BadRequest("The Attendance already exists");
             var attendance = new Attendance
             {
-                CourseID = courseId,
-                AttendeeId = User.Identity.GetUserId()
+                CourseID = attendanceDto.CourseId,
+                AttendeeId = userId
             };
             _dbContext.Attendances.Add(attendance);
             _dbContext.SaveChanges();

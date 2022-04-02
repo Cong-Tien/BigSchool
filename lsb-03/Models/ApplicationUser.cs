@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -13,6 +16,14 @@ namespace lsb_03.Models
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+        public ICollection<Follwing> Followers { get; set; }
+        public ICollection<Follwing> Followees { get; set; }
+
+        public ApplicationUser()
+        {
+            Followers = new Collection<Follwing>();
+            Followees = new Collection<Follwing>();
+        }
        
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
